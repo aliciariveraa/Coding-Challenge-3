@@ -6,3 +6,12 @@ prices.push(23);
 prices.shift();
 // Log the updated array to the console
 console.log('Updated Price List:', prices);
+// Task 2: Modifying Customer Orders
+let orders = [6, 24, 5, 3, 6]; // Declare an array with at least 5 order quantities
+// Increase the third order quantity by 5
+orders[2] += 5;
+// Calculate the total number of all orders
+let totalOrders = orders.reduce((sum, order) => sum + order, 0);
+// Log the updated array and total order count to the console
+console.log('Updated Orders:', orders);
+console.log('Total Orders:', totalOrders);
